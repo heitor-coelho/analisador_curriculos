@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "analisador-super-mega-analisante"
+version = "0.1.0"
+description = "Análise inteligente de currículos com OCR e LLM"
+authors = ["Heitor Coelho <heitor.santosprog@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "app" }]
+
+[tool.poetry.dependencies]
+python = ">=3.12"
+fastapi = ">=0.116.0,<0.117.0"
+uvicorn = ">=0.35.0,<0.36.0"
+pillow = ">=11.3.0,<12.0.0"
+pytesseract = ">=0.3.13,<0.4.0"
+python-multipart = ">=0.0.20,<0.0.21"
+python-dotenv = ">=1.1.1,<2.0.0"
+pymongo = ">=4.13.2,<5.0.0"
+motor = "^3.1"
+transformers = "^4.30.0"
+sentence-transformers = "^2.2.2"
+torch = {extras = ["cpu"], version = "^2.0.0"}
+pymupdf = "^1.26.3"
+pytest = "^8.4.1"
+httpx = "^0.28.1"
+pytest-asyncio = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+isort = "^6.0.1"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
