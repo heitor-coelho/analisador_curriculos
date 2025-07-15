@@ -135,14 +135,6 @@ Todos os acessos são registrados automaticamente em MongoDB com os seguintes da
 
 ---
 
-## ✅ Boas Práticas Adotadas
-
-* Async/Await com `asyncio.create_task` para salvar logs sem bloquear a API.
-* Swagger com exemplos reais e textos amigáveis para facilitar o uso por pessoas não-técnicas.
-* Sem armazenamento de arquivos para reduzir custos e riscos de privacidade.
-
----
-
 ## 🤝 Contribuições
 
 PRs são bem-vindos! Foco atual: adicionar suporte a modelos locais de LLM, sumarização por partes (chunking) e painel web.
